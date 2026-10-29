@@ -91,14 +91,14 @@
   }
   main.application.journal-entry.reading-export {
     width: calc(100% - 260px);
-    max-width: 1000px;
+    max-width: none;
     margin-left: 260px;
     margin-right: auto;
   }
   body.reading-export-host > .translation-note {
     box-sizing: border-box;
     width: calc(100% - 260px);
-    max-width: 1000px;
+    max-width: none;
     margin: 0 auto 12px 260px;
   }
 }
