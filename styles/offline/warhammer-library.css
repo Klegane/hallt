@@ -1,0 +1,1956 @@
+@charset "UTF-8";
+.theme-light .warhammer.item-dialog {
+  --border: var(--color-dark-6);
+  --selected: var(--color-warm-1);
+}
+
+.warhammer.item-dialog {
+  --border: var(--color-cool-3);
+  --selected: var(--color-warm-3);
+  display: flex;
+  flex-direction: column;
+}
+.warhammer.item-dialog .window-content > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.warhammer.item-dialog .dialog-text {
+  text-align: center;
+}
+.warhammer.item-dialog .list-container {
+  flex: 1;
+}
+.warhammer.item-dialog .dialog-list {
+  flex: 1;
+  list-style: none;
+  padding: 0px;
+  overflow: auto;
+}
+.warhammer.item-dialog .dialog-item {
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin: 0px;
+  line-height: 3rem;
+}
+.warhammer.item-dialog .dialog-item.selected {
+  background-color: var(--selected);
+}
+.warhammer.item-dialog .dialog-item label {
+  margin-left: 8px;
+}
+.warhammer.item-dialog .dialog-item img {
+  flex: 0 0 3rem;
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  border: none;
+}
+
+.application.bug-report {
+  --border: var(--color-cool-3);
+  --issue: var(--color-cool-3);
+}
+.application.bug-report [data-tab=report] {
+  height: 100%;
+}
+.application.bug-report [data-tab=report] .report-container {
+  height: 100%;
+}
+.application.bug-report [data-tab=report] .report-container .form-group.stacked textarea {
+  height: 100px;
+}
+.application.bug-report [data-tab=report] .report-container p.notification {
+  display: unset;
+}
+.application.bug-report [data-tab=report] .report-container .issues {
+  display: flex;
+  flex-direction: column;
+}
+.application.bug-report [data-tab=report] .report-container .issues .list {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+.application.bug-report [data-tab=report] .report-container .issues .list .match {
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 6rem;
+  max-width: 10rem;
+  min-width: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.application.bug-report [data-tab=issues] .issue-details {
+  background: var(--issue);
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.application.bug-report [data-tab=issues] .issue-details.closed {
+  opacity: 0.7;
+}
+.application.bug-report [data-tab=issues] .issue-details .issue-title {
+  flex: 1;
+}
+.application.bug-report [data-tab=issues] .issue-details .status {
+  text-align: center;
+  flex: 0 0 20%;
+  font-size: var(--font-size-12);
+}
+
+.warhammer.roll-dialog .dialog-modifiers ul {
+  padding: 0px;
+}
+
+.warhammer.roll-dialog-v2 {
+  --modifier-bg: var(--color-cool-3);
+  gap: 0px;
+}
+.warhammer.roll-dialog-v2 .dialog-base {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  height: calc(100% - 2.5rem - 1rem);
+}
+.warhammer.roll-dialog-v2 .dialog-base .dialog-fields {
+  overflow: hidden;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.warhammer.roll-dialog-v2 .dialog-base .dialog-fields > * {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.warhammer.roll-dialog-v2 .dialog-modifiers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+.warhammer.roll-dialog-v2 .dialog-modifiers .modifier-list {
+  height: 100%;
+  overflow: auto;
+}
+.warhammer.roll-dialog-v2 .dialog-modifiers ul {
+  text-align: left;
+  list-style: none;
+  padding: 0px;
+  flex: 1;
+  margin: 0px;
+}
+.warhammer.roll-dialog-v2 .dialog-modifiers .modifier {
+  margin: 0px;
+  padding: 0.3rem 0.3rem;
+}
+.warhammer.roll-dialog-v2 .dialog-modifiers .modifier.active {
+  background: var(--modifier-bg);
+}
+
+.warhammer.application.choice-config .window-content > div {
+  height: 100%;
+}
+.warhammer.application.choice-config .tab {
+  margin: 10px 0px;
+  height: calc(100% - 40px);
+}
+.warhammer.application.choice-config .sheet-list {
+  height: 100%;
+}
+.warhammer.application.choice-config .sheet-list .list-content {
+  overflow-y: auto;
+}
+.warhammer.application.choice-config .sheet-list .row-content .list-controls {
+  justify-content: right;
+}
+.warhammer.application.choice-config .choice {
+  padding: 5px;
+  border: 1px solid var(--color-cool-3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  width: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0px;
+}
+.warhammer.application.choice-config .connector {
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.warhammer.choice-option .filters button {
+  width: 5rem;
+}
+
+.warhammer.application.choice-decision .tree-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.warhammer.application.choice-decision .tree-container .option {
+  border: 1px solid var(--color-light-5);
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+.warhammer.application.choice-decision .tree-container .choice.chosen {
+  background-color: var(--color-warm-2);
+  border-color: var(--color-right-3);
+  color: --color-light-1;
+}
+.warhammer.application.choice-decision .tree-container .choice.and,
+.warhammer.application.choice-decision .tree-container .choice.or {
+  margin: 5px;
+  border: 2px solid var(--color-cool-4);
+}
+.warhammer.application.choice-decision .tree-container .choice.invalid {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.warhammer.application.choice-decision .tree-container .choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.warhammer.application.choice-decision .tree-container .choice label:last-child {
+  display: none;
+}
+
+.warhammer.script-editor .window-content div[data-application-part=editor] {
+  height: 100%;
+  overflow: hidden;
+}
+.warhammer.script-editor .window-content code-mirror[name=script] {
+  height: 100%;
+}
+.warhammer.script-editor .script-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.warhammer.script-editor .script-fields .script label {
+  margin-bottom: 0.5rem;
+}
+.warhammer.script-editor .window-content > div {
+  overflow: auto;
+}
+
+.warhammer.diff-editor .diff {
+  height: 92%;
+}
+.warhammer.diff-editor .diff-container {
+  height: calc(100% - 5rem);
+}
+
+.warhammer.rich-editor .window-content > :first-of-type {
+  height: 100%;
+}
+.warhammer.rich-editor prose-mirror {
+  height: 100%;
+}
+.warhammer.rich-editor .editor-container {
+  overflow-y: hidden;
+}
+
+.theme-light .warhammer.actor.application,
+.theme-light .warhammer.item.application {
+  --attribute-input: transparent;
+  --attribute-input-border: transparent;
+  --attribute-border: var(--color-dark-6);
+  --fieldset-border: var(--color-dark-6);
+  --attribute-title: var(--color-dark-3);
+  --attribute-title-color: white;
+  --attribute-locked-input: rgba(0, 0, 0, 0.1);
+  --attribute-locked-border: transparent;
+  --attribute-label: rgba(0, 0, 0, 0.1);
+  --attribute-field: transparent;
+  --form-label: rgba(0, 0, 0, 0.1);
+  --form-input: transparent;
+  --form-input-border: transparent;
+  --form-group-border: var(--color-dark-6);
+  --editor-header: rgba(0, 0, 0, 0.1);
+  --editor-header-border: var(--color-dark-6);
+  --hover-bg: var(--color-cool-5);
+}
+
+.warhammer.actor.application,
+.warhammer.item.application {
+  --attribute-input: var(--color-cool-4);
+  --attribute-input-border: transparent;
+  --attribute-border: var(--color-cool-3);
+  --attribute-title: var(--color-cool-3);
+  --attribute-title-color: white;
+  --fieldset-border: var(--color-cool-3);
+  --attribute-locked-input: transparent;
+  --attribute-locked-border: transparent;
+  --attribute-label: transparent;
+  --attribute-field: transparent;
+  --form-label: transparent;
+  --form-input: var(--color-cool-4);
+  --form-input-border: transparent;
+  --form-group-border: var(--color-cool-3);
+  --editor-header: var(--color-cool-3);
+  --editor-header-border: transparent;
+  --hover-bg: transparent;
+}
+.warhammer.actor.application .positive,
+.warhammer.item.application .positive {
+  color: var(--color-level-success);
+}
+.warhammer.actor.application .negative,
+.warhammer.item.application .negative {
+  color: var(--color-level-error);
+}
+.warhammer.actor.application .rollable > *,
+.warhammer.item.application .rollable > * {
+  cursor: pointer;
+}
+.warhammer.actor.application .rollable:hover img,
+.warhammer.item.application .rollable:hover img {
+  color: white;
+  box-shadow: 0px 0px 10px var(--color-cool-3) inset;
+  background: var(--hover-bg);
+}
+.warhammer.actor.application section.tab,
+.warhammer.item.application section.tab {
+  gap: 0.5rem;
+}
+.warhammer.actor.application .like-input,
+.warhammer.item.application .like-input {
+  width: 100%;
+  height: var(--input-height);
+  line-height: var(--input-height);
+  padding: 0 0.5rem;
+  background: var(--form-input);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--color-text-primary);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.warhammer.actor.application .like-input > *,
+.warhammer.item.application .like-input > * {
+  flex: 1;
+}
+.warhammer.actor.application .like-input .control,
+.warhammer.item.application .like-input .control {
+  flex: 0 0 1rem;
+}
+.warhammer.actor.application .form-group,
+.warhammer.item.application .form-group {
+  gap: 0px;
+  border: 1px solid var(--form-group-border);
+}
+.warhammer.actor.application .form-group select,
+.warhammer.actor.application .form-group input:not([type=checkbox]),
+.warhammer.item.application .form-group select,
+.warhammer.item.application .form-group input:not([type=checkbox]) {
+  border-radius: 0px;
+  background: var(--form-input);
+  border-color: var(--form-input-border);
+}
+.warhammer.actor.application .form-group label,
+.warhammer.item.application .form-group label {
+  border-right: 1px solid var(--form-group-border);
+  height: var(--input-height);
+  line-height: var(--input-height);
+  text-align: center;
+  background: var(--form-label);
+}
+.warhammer.actor.application .form-group.stacked label,
+.warhammer.item.application .form-group.stacked label {
+  border-right: none;
+}
+.warhammer.actor.application .form-group .hint,
+.warhammer.item.application .form-group .hint {
+  margin: 0px;
+  padding: 0.5rem;
+  border-top: 1px dashed var(--form-group-border);
+}
+.warhammer.actor.application prose-mirror .editor-content,
+.warhammer.item.application prose-mirror .editor-content {
+  position: static;
+}
+.warhammer.actor.application .editor-section .header,
+.warhammer.item.application .editor-section .header {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding-left: 5px;
+  background: var(--editor-header);
+  border: 1px solid var(--editor-header-border);
+}
+.warhammer.actor.application .sheet-effect-buttons,
+.warhammer.item.application .sheet-effect-buttons {
+  margin: 3px 0px;
+  display: flex;
+}
+.warhammer.actor.application .sheet-effect-buttons button,
+.warhammer.item.application .sheet-effect-buttons button {
+  font-size: var(--font-size-10);
+  padding: 0px 0.5rem;
+  height: 1rem;
+}
+.warhammer.actor.application fieldset,
+.warhammer.item.application fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-color: var(--fieldset-border);
+  border-radius: 8px;
+}
+.warhammer.actor.application .attribute-box,
+.warhammer.item.application .attribute-box {
+  --rows: 2;
+  --columns: 12;
+  --row-height: 1.5rem;
+  --title-height: 1.5rem;
+  flex: 1;
+  border: 1px solid var(--attribute-border);
+  border-right: none;
+  height: calc(var(--rows) * var(--row-height));
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+  box-sizing: content-box;
+}
+.warhammer.actor.application .attribute-box.single,
+.warhammer.item.application .attribute-box.single {
+  --rows: 1;
+}
+.warhammer.actor.application .attribute-box.single .label,
+.warhammer.item.application .attribute-box.single .label {
+  border-bottom: 0px;
+}
+.warhammer.actor.application .attribute-box.titled,
+.warhammer.item.application .attribute-box.titled {
+  --rows: 3;
+  grid-template-rows: repeat(var(--title-height) repeat(var(--rows), 1fr));
+  height: calc((var(--rows) - 1) * var(--row-height) + var(--title-height));
+}
+.warhammer.actor.application .attribute-box .title,
+.warhammer.item.application .attribute-box .title {
+  color: var(--attribute-title-color);
+  background: var(--attribute-title);
+  height: var(--title-height);
+}
+.warhammer.actor.application .attribute-box.bottom-label .label,
+.warhammer.item.application .attribute-box.bottom-label .label {
+  border-top: 1px solid var(--attribute-border);
+  border-bottom: none;
+}
+.warhammer.actor.application .attribute-box:first-child,
+.warhammer.item.application .attribute-box:first-child {
+  margin-left: 0px;
+}
+.warhammer.actor.application .attribute-box:last-child,
+.warhammer.item.application .attribute-box:last-child {
+  margin-right: 0px;
+}
+.warhammer.actor.application .attribute-box > div,
+.warhammer.item.application .attribute-box > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warhammer.actor.application .attribute-box .field,
+.warhammer.item.application .attribute-box .field {
+  border-right: 1px solid var(--attribute-border);
+  width: 100%;
+  background: var(--attribute-field);
+  height: var(--row-height);
+  line-height: var(--row-height);
+}
+.warhammer.actor.application .attribute-box .label,
+.warhammer.item.application .attribute-box .label {
+  border-bottom: 1px solid var(--attribute-border);
+  border-right: 1px solid var(--attribute-border);
+  width: 100%;
+  background: var(--attribute-label);
+  white-space: nowrap;
+  height: var(--row-height);
+  line-height: var(--row-height);
+}
+.warhammer.actor.application .attribute-box .label i,
+.warhammer.item.application .attribute-box .label i {
+  margin: 0px 3px;
+}
+.warhammer.actor.application .attribute-box select,
+.warhammer.actor.application .attribute-box input,
+.warhammer.item.application .attribute-box select,
+.warhammer.item.application .attribute-box input {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  text-align: center;
+  background-color: var(--attribute-input);
+  border: 1px solid var(--attribute-input-border);
+  padding: 0px;
+  line-height: var(--row-height);
+}
+.warhammer.actor.application .attribute-box .progress-bar,
+.warhammer.item.application .attribute-box .progress-bar {
+  height: var(--row-height);
+  border: 0px;
+}
+.warhammer.actor.application .attribute-box input:disabled,
+.warhammer.actor.application .attribute-box input[readonly],
+.warhammer.item.application .attribute-box input:disabled,
+.warhammer.item.application .attribute-box input[readonly] {
+  background-color: var(--attribute-locked-input);
+  border: 1px solid var(--attribute-locked-border);
+}
+.warhammer.actor.application .attribute-box .interact,
+.warhammer.item.application .attribute-box .interact {
+  background: var(--attribute-input);
+  display: flex;
+  justify-content: space-evenly;
+}
+.warhammer.actor.application .attribute-box .interact.bottom,
+.warhammer.item.application .attribute-box .interact.bottom {
+  border-top: 1px solid var(--attribute-border);
+}
+.warhammer.actor.application .progress-bar,
+.warhammer.item.application .progress-bar {
+  --color: var(--color-warm-3);
+  --height: 1rem;
+  --radius: 0px
+  margin: 4px 0px;
+  display: flex;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--color);
+  height: 50%;
+}
+.warhammer.actor.application .progress-bar .fill,
+.warhammer.item.application .progress-bar .fill {
+  background-color: var(--color);
+}
+.warhammer.actor.application h2.sheet-divider,
+.warhammer.item.application h2.sheet-divider {
+  text-align: center;
+  font-size: var(--font-size-18);
+  font-weight: bold;
+  margin: 0px 30%;
+  --color: var(--color-cool-3);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(36deg, rgba(255, 255, 255, 0) 0%, var(--color) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
+.warhammer.actor.application .choice-group,
+.warhammer.item.application .choice-group {
+  text-align: center;
+  margin: 0.5rem 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.warhammer.actor.application .choice-group label,
+.warhammer.item.application .choice-group label {
+  font-size: var(--font-size-18);
+}
+.warhammer.actor.application .choice-group .choice-text,
+.warhammer.item.application .choice-group .choice-text {
+  margin-top: 5px;
+  text-align: center;
+  border: 2px solid var(--attribute-border);
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+}
+.warhammer.actor.application .name-list,
+.warhammer.actor.application .document-reference,
+.warhammer.item.application .name-list,
+.warhammer.item.application .document-reference {
+  position: relative;
+}
+.warhammer.actor.application .name-list > div,
+.warhammer.actor.application .document-reference > div,
+.warhammer.item.application .name-list > div,
+.warhammer.item.application .document-reference > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+  gap: 0.5rem;
+}
+.warhammer.actor.application .name-list > div img,
+.warhammer.actor.application .document-reference > div img,
+.warhammer.item.application .name-list > div img,
+.warhammer.item.application .document-reference > div img {
+  object-fit: contain;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.warhammer.actor.application .name-list .floating,
+.warhammer.actor.application .document-reference .floating,
+.warhammer.item.application .name-list .floating,
+.warhammer.item.application .document-reference .floating {
+  position: absolute;
+  top: -0.3rem;
+  right: 0.2rem;
+  height: 1rem;
+  width: 1rem;
+}
+.warhammer.actor.application .name-list.toggle-list,
+.warhammer.item.application .name-list.toggle-list {
+  --color: var(--color-warm-2);
+  --text: black;
+  --text-active: white;
+}
+.warhammer.actor.application .name-list.toggle-list .list-element,
+.warhammer.item.application .name-list.toggle-list .list-element {
+  margin: 5px;
+  border: 1px solid var(--color);
+  width: 3rem;
+  border-radius: 5px;
+  flex: 0 0 3rem;
+  text-align: center;
+  font-weight: bold;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  padding: 0px;
+  color: var(--text);
+}
+.warhammer.actor.application .name-list.toggle-list .list-element.active,
+.warhammer.item.application .name-list.toggle-list .list-element.active {
+  background-color: var(--color);
+  color: var(--text-active);
+}
+.warhammer.actor.application .header-rule,
+.warhammer.item.application .header-rule {
+  margin: 1rem 0px;
+  text-align: center;
+}
+.theme-light .warhammer.application {
+  --list-header: rgba(0, 0, 0, 0.1);
+  --list-header-border: var(--color-dark-6);
+  --list-row: none;
+  --list-row-alternate: rgba(0, 0, 0, 0.05);
+  --name-bg: rgba(0, 0, 0, 0.05);
+  --name-border: var(--color-dark-6);
+  --name-label: rgba(0, 0, 0, 0.1) ;
+}
+
+.warhammer.application {
+  --list-header: var(--color-cool-4);
+  --list-header-border: var(--color-cool-3);
+  --list-row: none;
+  --list-row-alternate: #3028318f;
+  --name-bg: var(--color-cool-3);
+  --name-border: var(--color-cool-3);
+  --name-label: var(--color-cool-4);
+}
+.warhammer.application .sheet-list {
+  display: flex;
+  flex-direction: column;
+}
+.warhammer.application .sheet-list .list-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 2rem;
+  background: var(--list-row);
+}
+.warhammer.application .sheet-list .list-row:nth-child(even) {
+  background-color: var(--list-row-alternate);
+}
+.warhammer.application .sheet-list .list-header {
+  background-color: var(--list-header);
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border: 1px solid var(--list-header-border);
+}
+.warhammer.application .sheet-list .list-header .list-name {
+  margin: 0px 5px;
+}
+.warhammer.application .sheet-list .list-header .list-button {
+  flex: 0 0 10px;
+  margin: 0px 10px;
+}
+.warhammer.application .sheet-list.condensed .list-row {
+  line-height: 1.5rem;
+}
+.warhammer.application .sheet-list.condensed .list-content .row-content {
+  height: 1.5rem;
+}
+.warhammer.application .sheet-list .list-content .row-content {
+  height: 2rem;
+}
+.warhammer.application .sheet-list .row-content {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+.warhammer.application .sheet-list .row-content .list-name {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex: 2;
+}
+.warhammer.application .sheet-list .row-content .list-name img {
+  flex: 0 0 2rem;
+  height: 2rem;
+  width: 2rem;
+}
+.warhammer.application .sheet-list .row-content .list-name .label {
+  margin: 0px 5px;
+}
+.warhammer.application .sheet-list .row-content .list-name input.label {
+  margin: 0px;
+  padding: 0px 5px;
+}
+.warhammer.application .sheet-list .row-content .list-controls {
+  flex: 0 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.warhammer.application .sheet-list .row-content .list-controls .list-control {
+  flex: 1;
+}
+.warhammer.application .sheet-list .row-content .like-input,
+.warhammer.application .sheet-list .row-content input,
+.warhammer.application .sheet-list .row-content select {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border-radius: 0px;
+  border: none;
+}
+.warhammer.application .sheet-list .row-content .like-input[type=checkbox],
+.warhammer.application .sheet-list .row-content input[type=checkbox],
+.warhammer.application .sheet-list .row-content select[type=checkbox] {
+  text-align: center;
+}
+.warhammer.application .sheet-list .row-content > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 0 0 100px;
+}
+.warhammer.application .sheet-list .row-content > *.flex {
+  flex: 1;
+}
+.warhammer.application .sheet-list .row-content > *.fit {
+  flex: unset;
+}
+.warhammer.application .sheet-list .row-content .large {
+  flex: 0 0 200px;
+}
+.warhammer.application .sheet-list .row-content .large.flex {
+  flex: 2;
+}
+.warhammer.application .sheet-list .row-content .small {
+  flex: 0 0 50px;
+}
+.warhammer.application .sheet-list .row-content .small.flex {
+  flex: 0.5;
+}
+.warhammer.application .sheet-list .row-content .tiny {
+  flex: 0 0 25px;
+}
+.warhammer.application .sheet-list .row-content .inline-description {
+  flex: 3;
+}
+.warhammer.application .sheet-list .row-content .inline-description p {
+  margin: 0px;
+}
+.warhammer.application .sheet-list .row-content .progress-bar {
+  height: unset;
+  margin: 0.5rem;
+}
+.warhammer.application .sheet-list .description {
+  line-height: 1rem;
+}
+.warhammer.application .sheet-list .dropdown-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 250ms;
+  overflow: hidden;
+  padding: 0px 0.5rem;
+  line-height: 1.5rem;
+}
+.warhammer.application .sheet-list .dropdown-content > * {
+  overflow: hidden;
+}
+.warhammer.application .sheet-list .dropdown-content.expanded {
+  grid-template-rows: 1fr;
+}
+.warhammer.application .name-list {
+  --label-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0px;
+  border: 1px solid var(--name-border);
+}
+.warhammer.application .name-list label {
+  text-align: center;
+  height: var(--label-height);
+  line-height: var(--label-height);
+  background: var(--name-label);
+}
+.warhammer.application .name-list .list-content {
+  border-top: 1px solid var(--name-border);
+  min-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+}
+.warhammer.application .name-list .list-content .list-element {
+  position: relative;
+}
+.warhammer.application .name-list .list-content .list-element:not(.input, .toggle) {
+  border: 1px solid var(--name-border);
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: var(--name-bg);
+}
+.warhammer.application .name-list .list-content .list-element .floating {
+  position: absolute;
+  right: -7px;
+  top: -5px;
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  background: var(--name-bg);
+}
+.warhammer.application .name-list .list-content .list-element select,
+.warhammer.application .name-list .list-content .list-element input {
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+  height: 1.5rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+table.embedded p {
+  margin: 0px;
+}
+table.embedded thead .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-size-20);
+}
+table.embedded thead .subheader {
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-size-16);
+}
+table.embedded thead.no-center .label {
+  text-align: left;
+  padding-left: 5px;
+}
+table.embedded .separator {
+  font-size: var(--font-size-16);
+  font-weight: bold;
+}
+table.embedded tbody td:first-of-type {
+  font-weight: bold;
+  width: 20%;
+}
+table.embedded tbody td {
+  text-align: center;
+}
+table.embedded tbody.no-center td {
+  text-align: left;
+  padding-left: 5px;
+}
+table.embedded tbody.no-center td:first-of-type {
+  text-align: center;
+}
+
+.journal-entry-page .journal-image,
+.editor-content .journal-image {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.journal-entry-page .journal-image img,
+.editor-content .journal-image img {
+  border: none;
+  object-fit: contain;
+}
+.journal-entry-page .journal-image.centered,
+.editor-content .journal-image.centered {
+  align-items: center;
+}
+.journal-entry-page .journal-image.fit img,
+.editor-content .journal-image.fit img {
+  width: 100%;
+}
+.journal-entry-page .journal-image.float-right, .journal-entry-page .journal-image.float-left,
+.editor-content .journal-image.float-right,
+.editor-content .journal-image.float-left {
+  display: unset;
+  width: unset;
+}
+.journal-entry-page .journal-image.float-right > *,
+.editor-content .journal-image.float-right > * {
+  float: right;
+}
+.journal-entry-page .journal-image.float-left > *,
+.editor-content .journal-image.float-left > * {
+  float: left;
+}
+.journal-entry-page .journal-image.flip img,
+.editor-content .journal-image.flip img {
+  transform: scaleX(-1);
+}
+.journal-entry-page .gallery,
+.editor-content .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.journal-sheet .toc .level4 .page-title {
+  text-indent: calc(3 * var(--level-indent));
+}
+
+.warhammer .advanced-effect-config {
+  overflow: auto;
+}
+.warhammer .advanced-effect-config code-mirror {
+  margin-bottom: 0.5rem;
+}
+.warhammer .advanced-effect-config fieldset {
+  margin: 0.5rem 0px;
+}
+
+.warhammer .script-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.warhammer .script-list .script {
+  display: flex;
+  width: 100%;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  padding: 0px 0.5rem;
+  margin-bottom: 0.5rem;
+  background: var(--color-cool-3);
+  border-radius: 5px;
+}
+.warhammer .script-list .script label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.warhammer .script-list .script > * {
+  flex: 1;
+}
+.warhammer .script-list .script > a {
+  flex: 0 0 1.5rem;
+}
+.warhammer .script-list button[data-action=addScript] {
+  width: 20%;
+  height: 1.5rem;
+  padding: 0px;
+  line-height: 1.5rem;
+}
+
+body.theme-light .warhammer.application {
+  --tab-color: var(--color-border-light-primary);
+}
+body.theme-light .warhammer .script-list .script {
+  background: rgba(0, 0, 0, 0.1);
+}
+body.theme-light .warhammer.roll-dialog-v2 {
+  --modifier-bg: var(--color-warm-1) ;
+}
+
+filter-state {
+  --filter-state-background-color: var(--checkbox-background-color);
+  --filter-state-focus-color: var(--color-warm-2);
+  --filter-state-positive-color: rgb(0 128 0);
+  --filter-state-negative-color: rgb(185 46 36);
+  --filter-state-size: 1em;
+  display: inline-block;
+  flex: 0 0 var(--filter-state-size);
+  width: var(--filter-state-size);
+  height: var(--filter-state-size);
+}
+filter-state:focus, filter-state:focus-visible {
+  outline: none;
+}
+filter-state .indicator {
+  transition: all 250ms ease, outline-color 0.5s;
+  border-radius: 3px;
+  outline: 2px solid transparent;
+}
+filter-state .indicator::before {
+  content: "\f0c8";
+  width: var(--filter-state-size);
+  height: var(--filter-state-size);
+  color: var(--filter-state-background-color);
+  font-family: var(--font-awesome);
+  font-size: var(--filter-state-size);
+  line-height: var(--filter-state-size);
+}
+filter-state .indicator[data-value="1"]::before {
+  content: "\f151";
+  color: var(--filter-state-positive-color);
+}
+filter-state .indicator[data-value="-1"]::before {
+  content: "\f150";
+  color: var(--filter-state-negative-color);
+}
+filter-state:not(:disabled) .indicator {
+  cursor: pointer;
+}
+filter-state:focus-visible .indicator {
+  outline: 2px solid var(--filter-state-focus-color);
+}
+
+warhammer-checkbox {
+  width: 14px;
+  height: 14px;
+}
+warhammer-checkbox[disabled]:not([checked]) {
+  --checkbox-border-color: var(--color-text-light-6);
+  --checkbox-empty-color: transparent;
+}
+
+.theme-dark warhammer-checkbox[disabled]:not([checked]) {
+  --checkbox-border-color: #434857;
+  --checkbox-empty-color: #434857;
+}
+
+.compendium-browser, #compendium-browser-source-config {
+  --card-background: #f8f4f1;
+  --color-gold: #9f9275;
+  --color-fieldset-border: var(--color-border-light-tertiary);
+  --items-section-shadow: rgba(0, 0, 0, 0.45);
+  --items-section-background-color: none;
+  --checkbox-icon-size: 68%;
+}
+
+.theme-dark .compendium-browser, .theme-dark #compendium-browser-source-config {
+  --color-fieldset-border: #434857;
+  --card-background: #252830;
+  --color-gold: #242731;
+  --checkbox-fill-color: #80765e;
+  --checkbox-border-color: var(--checkbox-fill-color);
+  --items-section-shadow: rgba(150, 150, 150, 0.45);
+  --items-section-background-color: var(--color-cool-5);
+}
+
+.compendium-browser section.window-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: min-content auto min-content;
+  gap: 5px 5px;
+  grid-template-areas: "nav nav" "sidebar results" "footer footer";
+}
+.compendium-browser section.window-content .collapsible.collapsed .fa-caret-down {
+  transform: rotate(-90deg);
+}
+.compendium-browser section.window-content .collapsible.collapsed .collapsible-content {
+  grid-template-rows: 0fr;
+}
+.compendium-browser section.window-content .collapsible.collapsed .collapsible-content > .wrapper {
+  margin-top: 0;
+}
+.compendium-browser section.window-content .collapsible .fa-caret-down {
+  transition: transform 250ms ease;
+}
+.compendium-browser section.window-content .collapsible .collapsible-content {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 250ms ease;
+}
+.compendium-browser section.window-content .collapsible .collapsible-content > .wrapper {
+  margin-top: 4px;
+  overflow: hidden;
+}
+.compendium-browser section.window-content nav.tabs {
+  grid-area: nav;
+}
+.compendium-browser section.window-content nav.tabs a {
+  background: linear-gradient(to right, var(--color-warm-2), var(--color-warm-1));
+  color: white;
+  border-radius: 8px 8px 2px 2px;
+  border-bottom: solid 2px var(--color-underline-header);
+  padding: 6px 0 4px 8px;
+  filter: grayscale(1);
+}
+.compendium-browser section.window-content nav.tabs a.active {
+  filter: none !important;
+}
+.compendium-browser section.window-content nav.tabs a:hover {
+  filter: grayscale(0.3);
+}
+.compendium-browser section.window-content nav.tabs a i {
+  font-size: unset;
+}
+.compendium-browser section.window-content .sidebar {
+  grid-area: sidebar;
+  scrollbar-gutter: stable;
+  gap: 12px;
+  overflow: hidden auto;
+  min-height: 0;
+  padding: 2px;
+}
+.compendium-browser section.window-content .sidebar [data-application-part=types] .type-entry, .compendium-browser section.window-content .sidebar [data-application-part=types] .type-group-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  align-items: center;
+}
+.compendium-browser section.window-content .sidebar [data-application-part=types] .type-entry input[type=checkbox], .compendium-browser section.window-content .sidebar [data-application-part=types] .type-group input[type=checkbox] {
+  margin: 0;
+}
+.compendium-browser section.window-content .sidebar [data-application-part=types] .type-entry label {
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.compendium-browser section.window-content .sidebar [data-application-part=types] .type-group .wrapper {
+  margin-inline-start: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.compendium-browser section.window-content .sidebar .filter-header > label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-size: var(--font-size-11);
+}
+.compendium-browser section.window-content .sidebar .filter-header > label::before, .compendium-browser section.window-content .sidebar .filter-header > label::after {
+  content: "";
+  flex-basis: 50%;
+  border-top: 1px dotted var(--color-cool-3);
+  align-self: center;
+}
+.compendium-browser section.window-content .sidebar .filter.label-top {
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+}
+.compendium-browser section.window-content .sidebar .filter.label-top > * {
+  flex: 0;
+  font-size: var(--font-size-11);
+  line-height: var(--line-height-12);
+}
+.compendium-browser section.window-content .sidebar .filter label.filter-choice {
+  display: block;
+}
+.compendium-browser section.window-content .sidebar .filter .form-fields {
+  width: 100%;
+  --input-height: 1.5rem;
+}
+.compendium-browser section.window-content .sidebar .filter .form-fields .sep {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5333333333);
+}
+.compendium-browser section.window-content .sidebar .filter-set:not([data-filter-id=source]) .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.compendium-browser section.window-content .sidebar .filter-set:not([data-filter-id=source]) .wrapper .filter-choice {
+  flex: 1 1 40%;
+}
+.compendium-browser section.window-content .results {
+  grid-area: results;
+  scrollbar-gutter: stable;
+  min-height: 0;
+  --results-padding: 6px;
+  padding: var(--results-padding) 8px 12px 4px;
+  overflow-y: auto;
+}
+.compendium-browser section.window-content .results .items-header {
+  position: sticky;
+  top: calc(var(--results-padding) * -1);
+  z-index: 1;
+}
+.compendium-browser section.window-content .results .results-loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: var(--color-text-light-6);
+}
+.compendium-browser section.window-content .results .results-loading > i {
+  height: 16px;
+}
+.compendium-browser section.window-content .results .items-header {
+  display: flex;
+  align-items: stretch;
+  position: sticky;
+  top: calc(var(--results-padding) * -1);
+  z-index: 1;
+  background: linear-gradient(to right, var(--color-warm-3), var(--color-warm-2));
+  color: white;
+  border-radius: 6px 6px 0 0;
+  border-bottom: solid 2px var(--color-underline-header);
+  padding: 6px 0 4px 8px;
+}
+.compendium-browser section.window-content .results .items-header .item-name {
+  font-size: var(--font-size-16);
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  border: none;
+}
+.compendium-browser section.window-content .results .items-header .item-header {
+  text-transform: uppercase;
+  font-size: var(--font-size-11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.compendium-browser section.window-content .results .items-header .item-header.item-source {
+  width: 200px;
+}
+.compendium-browser section.window-content .results .items-section {
+  background-color: var(--items-section-background-color);
+  box-shadow: 0 0 6px var(--items-section-shadow);
+  border-radius: 6px 6px 0 0;
+}
+.compendium-browser section.window-content .results .items-section .item-controls {
+  width: 50px;
+  align-items: center;
+  padding: 0;
+}
+.compendium-browser section.window-content .results .item-list {
+  min-height: 0;
+}
+.compendium-browser section.window-content .results li.item {
+  margin: 0;
+}
+.compendium-browser section.window-content .results li.item .item-row {
+  display: flex;
+  align-items: stretch;
+}
+.compendium-browser section.window-content .results li.item .item-row .item-name {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  line-height: 1;
+  position: relative;
+}
+.compendium-browser section.window-content .results li.item .item-row .item-name .item-image {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  min-width: 32px;
+  min-height: 32px;
+}
+.compendium-browser section.window-content .results li.item .item-row .item-name .name {
+  flex: 1;
+}
+.compendium-browser section.window-content .results li.item .item-row .item-name .name-stacked {
+  display: flex;
+  flex-direction: column;
+}
+.compendium-browser section.window-content .results li.item .item-row .item-name .title {
+  font-weight: bold;
+  transition: text-shadow 250ms ease;
+  font-size: var(--font-size-13);
+}
+.compendium-browser section.window-content .results li.item .item-row .item-name:hover .title {
+  text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.compendium-browser section.window-content .results li.item .item-row .item-name .subtitle {
+  font-size: var(--font-size-10);
+  color: var(--color-text-dark-5);
+}
+.compendium-browser section.window-content .results li.item .item-row .item-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.compendium-browser section.window-content .results li.item .item-row .item-source {
+  width: 200px;
+  font-size: var(--font-size-13);
+  display: flex;
+  flex-direction: column;
+}
+.compendium-browser section.window-content .results li.item .item-row .item-source .subtitle {
+  font-size: var(--font-size-10);
+  color: var(--color-text-dark-5);
+}
+.compendium-browser section.window-content .results li.item .item-row .item-controls {
+  width: 50px;
+  align-items: center;
+  padding: 0;
+}
+.compendium-browser section.window-content .footer {
+  grid-area: footer;
+}
+
+#compendium-browser-source-config {
+  --checkbox-size: 16px;
+  /* Sidebar */
+  /* Packs */
+}
+#compendium-browser-source-config .window-content {
+  display: flex;
+  flex-direction: row;
+}
+#compendium-browser-source-config .window-content {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  padding: 0;
+}
+#compendium-browser-source-config .sidebar {
+  scrollbar-gutter: stable;
+  padding: 6px 4px 0 12px;
+  overflow: hidden auto;
+}
+#compendium-browser-source-config .sidebar search {
+  margin-bottom: 16px;
+}
+#compendium-browser-source-config .package-list {
+  padding: 0;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#compendium-browser-source-config .package-list.base {
+  padding-bottom: 8px;
+  position: relative;
+}
+#compendium-browser-source-config .package-list.base::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-border-highlight), transparent);
+}
+#compendium-browser-source-config .package-list li {
+  align-items: center;
+  gap: 8px;
+}
+#compendium-browser-source-config .package-list li:not([hidden]) {
+  display: flex;
+}
+#compendium-browser-source-config .package-list li.active .package {
+  font-weight: bold;
+}
+#compendium-browser-source-config .package-list .package {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+#compendium-browser-source-config .package-list .package:hover {
+  text-shadow: 0 0 6px var(--color-shadow-primary);
+}
+#compendium-browser-source-config .package-list .package .value {
+  font-weight: bold;
+  color: var(--color-text-dark-5);
+  font-size: var(--font-size-12);
+}
+#compendium-browser-source-config .packs {
+  display: flex;
+  scrollbar-gutter: stable;
+  padding: 10px 8px 0 4px;
+  overflow: hidden auto;
+  gap: 12px;
+  align-items: start;
+}
+#compendium-browser-source-config .packs .card {
+  border-radius: 4px;
+  background: var(--card-background);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--color-gold);
+}
+#compendium-browser-source-config .packs .card > legend {
+  background: var(--card-background);
+  position: relative;
+  border-radius: 2px;
+  padding: 2px 6px 0;
+}
+#compendium-browser-source-config .packs fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--color-fieldset-border);
+  margin: 0;
+}
+#compendium-browser-source-config .packs fieldset > legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: var(--font-size-11);
+  color: var(--color-text-dark-5);
+  padding: 0 6px;
+}
+#compendium-browser-source-config .packs .packs-section {
+  flex: 1;
+  max-width: 50%;
+}
+#compendium-browser-source-config .packs .packs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#compendium-browser-source-config .packs .packs-list li {
+  border-bottom: 1px dotted #bbb;
+  padding-bottom: 6px;
+}
+#compendium-browser-source-config .packs .packs-list li:last-child {
+  border: none;
+  padding: 0;
+}
+#compendium-browser-source-config .packs .packs-list li.all {
+  padding-top: 2px;
+  border-bottom: 1px solid #999;
+}
+#compendium-browser-source-config .packs .packs-list li.all .title {
+  text-transform: capitalize;
+}
+#compendium-browser-source-config .packs .packs-list li label {
+  font-size: unset;
+  height: unset;
+  line-height: normal;
+}
+#compendium-browser-source-config .packs .packs-list li label > .title {
+  line-height: normal;
+}
+
+.compendium-browser .filter-element search, #compendium-browser-source-config .filter-element search {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.compendium-browser .filter-element search > input[type=text], #compendium-browser-source-config .filter-element search > input[type=text] {
+  padding-left: 2rem;
+}
+.compendium-browser .filter-element search > input[type=text]:hover, .compendium-browser .filter-element search > input[type=text]:focus-visible, #compendium-browser-source-config .filter-element search > input[type=text]:hover, #compendium-browser-source-config .filter-element search > input[type=text]:focus-visible {
+  box-shadow: 0 0 12px var(--color-shadow-primary);
+}
+.compendium-browser .filter-element search::before, #compendium-browser-source-config .filter-element search::before {
+  content: "\f002";
+  font-family: var(--font-awesome);
+  font-weight: bold;
+  color: var(--color-text-light-6);
+  position: absolute;
+  left: 0.75rem;
+}
+.compendium-browser .filter-element search .controls, #compendium-browser-source-config .filter-element search .controls {
+  min-height: 0;
+  display: flex;
+  align-self: stretch;
+  align-items: stretch;
+}
+.compendium-browser .filter-element search .controls button, #compendium-browser-source-config .filter-element search .controls button {
+  padding: 0 6px 0 8px;
+}
+.compendium-browser .filter-element search .controls button i, #compendium-browser-source-config .filter-element search .controls button i {
+  margin: 0;
+}
+.compendium-browser .filter-element search .filter-control, #compendium-browser-source-config .filter-element search .filter-control {
+  height: 100%;
+  padding: 0 0.375rem;
+}
+.compendium-browser .filter-element search .filter-control.active, #compendium-browser-source-config .filter-element search .filter-control.active {
+  color: var(--color-text-dark-primary);
+}
+.compendium-browser .filter-element search .filter-control:hover:not(.disabled), #compendium-browser-source-config .filter-element search .filter-control:hover:not(.disabled) {
+  text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.compendium-browser .filter-element search .filter-control:hover:not(.disabled), .compendium-browser .filter-element search .filter-control:focus, #compendium-browser-source-config .filter-element search .filter-control:hover:not(.disabled), #compendium-browser-source-config .filter-element search .filter-control:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.warhammer.module-initializer {
+  text-align: center;
+}
+.warhammer.module-initializer .window-content {
+  height: 100%;
+}
+.warhammer.module-initializer .initializer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.warhammer.module-initializer .initializer h3 {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+.warhammer.module-initializer .module-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: auto;
+}
+.warhammer.module-initializer .module-list .module {
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  background-size: contain;
+  width: 200px;
+  height: 108px;
+  transition: opacity 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid var(--color-light-5);
+}
+.warhammer.module-initializer .module-list .module h3 {
+  color: var(--color-light-2);
+  margin: 0px;
+  font-size: 18px;
+  text-shadow: 0px 0px 10px black;
+}
+.warhammer.module-initializer .module-list .module .buttons {
+  flex: 0 0 50px;
+  width: 100%;
+  transition: opacity 0.5s;
+  opacity: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.warhammer.module-initializer .module-list .module .buttons button {
+  color: var(--color-light-2);
+  border-color: var(--color-light-5);
+  width: 30px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0px;
+}
+.warhammer.module-initializer .module-list .module .buttons button:not(:hover) {
+  background: var(--color-cool-5-50);
+}
+.warhammer.module-initializer .module-list .module:not(.uninstalled):not(.not-active):hover {
+  opacity: 1;
+}
+.warhammer.module-initializer .module-list .module:not(.uninstalled):not(.not-active):hover .buttons {
+  opacity: 1;
+}
+.warhammer.module-initializer .module-list .module.not-active {
+  opacity: 0.2;
+}
+.warhammer.module-initializer .module-list .module.uninstalled {
+  border-radius: 5px;
+}
+
+.application.dialog.initialization .dialog-form {
+  overflow: auto;
+}
+.document-resolver .window-content {
+  overflow: auto;
+}
+.document-resolver .document {
+  border: 1px solid var(--color-light-5);
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+.document-resolver .document header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.document-resolver .document header img {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  border: none;
+}
+.document-resolver .document header a {
+  flex: 1;
+  font-weight: bold;
+}
+.document-resolver .document table.diff {
+  width: 100%;
+  margin-top: 4px;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.document-resolver .document table.diff th, .document-resolver .document table.diff td {
+  border: 1px solid var(--color-light-5);
+  padding: 2px 4px;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+.document-resolver .document table.diff td.field {
+  font-weight: bold;
+  white-space: nowrap;
+}
+.document-resolver .document table.diff td.old {
+  color: var(--color-level-error, #a30000);
+  text-decoration: line-through;
+}
+.document-resolver .document table.diff td.new {
+  color: var(--color-level-success, #007a1e);
+}
+
+.chat-message .flexrow.gap,
+.chat-message .flexcol.gap {
+  gap: 0.5rem;
+}
+.chat-message .flexrow.wrap,
+.chat-message .flexcol.wrap {
+  flex-wrap: wrap;
+}
+.chat-message .test-buttons button {
+  height: unset;
+}
+.chat-message .test-buttons button:first-child {
+  flex: 0 0 1rem;
+}
+.chat-message .test-buttons button img {
+  flex: 0 0 1.5rem;
+}
+.chat-message .test-buttons button .apply-label {
+  flex: 1;
+}
+.chat-message .test-buttons button .test-label {
+  font-size: var(--font-size-12);
+}
+.chat-message .progress-bar {
+  --color: var(--color-warm-3);
+  --height: 1rem;
+  --radius: 0px
+  margin: 4px 0px;
+  display: flex;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--color);
+  height: 50%;
+  height: --var(--height);
+}
+.chat-message .progress-bar .fill {
+  background-color: var(--color);
+}
+
+.theme-light .warhammer.drag-dialog {
+  --border: var(--color-dark-6);
+}
+
+.warhammer.drag-dialog {
+  --border: var(--color-cool-3);
+  display: flex;
+  flex-direction: column;
+}
+.warhammer.drag-dialog .window-content > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.warhammer.drag-dialog .dialog-text {
+  text-align: center;
+}
+.warhammer.drag-dialog .drop-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.warhammer.drag-dialog .drop-container .droppable {
+  border: 1px dashed var(--border);
+  height: 100px;
+  width: 100px;
+}
+.warhammer.drag-dialog .drop-container .droppable img {
+  height: 100%;
+  width: 100%;
+}
+
+.warhammer {
+  --tab-color: var(--color-cool-3);
+}
+.warhammer.application img {
+  border: none;
+  object-fit: contain;
+}
+.warhammer.application .inactive:not(.prosemirror) {
+  opacity: 0.5;
+}
+.warhammer.application .disabled {
+  pointer-events: none;
+}
+.warhammer.application .hidden {
+  display: none;
+}
+.warhammer.application .centered {
+  text-align: center;
+}
+.warhammer.application .align-left {
+  text-align: left;
+}
+.warhammer.application input[type=number] {
+  text-align: center;
+}
+.warhammer.application .flexrow.gap,
+.warhammer.application .flexcol.gap {
+  gap: 0.5rem;
+}
+.warhammer.application .flexrow.wrap,
+.warhammer.application .flexcol.wrap {
+  flex-wrap: wrap;
+}
+.warhammer.application nav.sheet-tabs {
+  border-top: 1px solid var(--tab-color);
+  border-bottom: 1px solid var(--tab-color);
+  gap: 0px;
+}
+.warhammer.application nav.sheet-tabs a {
+  flex: 1;
+}
+.warhammer.application nav.sheet-tabs .active {
+  background-color: var(--tab-color);
+  text-shadow: none;
+}
+.warhammer.application nav.sheet-tabs > [data-tab] {
+  padding: 8px 0px;
+  flex: 1;
+  line-height: normal;
+}
+.warhammer.active-effect-sheet .key select {
+  width: 100%;
+}
+.warhammer.active-effect-sheet .script {
+  border: 1px solid black;
+  margin: 5px 0px;
+  padding: 5px;
+  display: flex;
+}
+.warhammer.active-effect-sheet .script > * {
+  flex: 1;
+}
+.warhammer.active-effect-sheet .script .script-delete,
+.warhammer.active-effect-sheet .script .script-edit {
+  flex: 0 0 20px;
+}
+.warhammer.active-effect-sheet .add-script {
+  width: 200px;
+  margin: 10px 30%;
+}
+.warhammer#context-menu {
+  z-index: 9999;
+  width: unset;
+}
+.warhammer.application .unlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.warhammer .form-group {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.warhammer .form-group > * {
+  flex: 3;
+}
+.warhammer .form-group > label {
+  flex: 2;
+}
+.warhammer .form-group label {
+  line-height: var(--form-field-height);
+}
+.warhammer .form-group label:has(input[type=checkbox]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.warhammer .form-group label input[type=checkbox] {
+  padding-top: 0.4rem;
+  margin: 0px;
+}
+.warhammer .form-group .form-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+.warhammer .form-group .form-fields > * {
+  flex: 1;
+}
+.warhammer .form-group .form-fields > label {
+  flex: 0;
+  padding: 0 4px;
+  text-align: center;
+}
+.warhammer .form-group .form-fields > label.checkbox {
+  flex: none;
+  padding: 0;
+}
+.warhammer .form-group .form-fields > input[type=checkbox] {
+  flex: 0 0 20px;
+}
+.warhammer .form-group .form-fields button {
+  flex: 0;
+  line-height: calc(var(--form-field-height) - 4px);
+}
+.warhammer .form-group .form-fields span.sep {
+  flex: none;
+}
+.warhammer .form-group span.units {
+  flex: 0;
+  line-height: 28px;
+  font-size: var(--font-size-12);
+  color: var(--color-text-dark-secondary);
+}
+.warhammer .form-group-stacked {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3px 0;
+  align-items: center;
+}
+.warhammer .form-group-stacked > * {
+  flex: 0 0 100%;
+}
+.warhammer .form-group.stacked > * {
+  flex: 0 0 100%;
+}
+.warhammer .form-group.slim .form-fields {
+  flex: 1;
+}
+.warhammer .form-group.slim .form-fields > label {
+  flex: none;
+  font-size: var(--font-size-12);
+  color: var(--color-text-dark-secondary);
+  text-align: right;
+}
+.warhammer .form-group.slim .form-fields > input[type=number] {
+  flex: 0 0 50px;
+  padding: 0;
+  text-align: center;
+}
+.warhammer .form-group.slim .form-fields > input[type=text] {
+  flex: 0 0 50px;
+  padding: 0;
+  text-align: center;
+}
+.warhammer .form-group.hidden {
+  display: none;
+}
+.warhammer h1.form-header,
+.warhammer h2.form-header,
+.warhammer h3.form-header {
+  margin: 0 0 5px;
+  padding: 3px 0;
+  color: var(--color-text-dark-header);
+  border-top: 1px solid var(--color-border-light-primary);
+  border-bottom: 1px solid var(--color-border-light-primary);
+}
+.warhammer .notes,
+.warhammer .hint {
+  flex: 0 0 100%;
+  font-size: var(--font-size-12);
+  line-height: var(--line-height-16);
+  color: var(--color-text-dark-secondary);
+  margin: 3px 0;
+}
+
+.warhammer.sidebar-info ul.links {
+  flex: 1;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.1rem;
+  text-transform: uppercase;
+  font-size: var(--font-size-11);
+  justify-content: center;
+}
+.warhammer.sidebar-info ul.links li:not(:last-child)::after {
+  content: " • ";
+  margin-inline: 3px;
+  font-weight: bold;
+}
+.warhammer.sidebar-info .system-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0px;
+}
+.warhammer.sidebar-info .system-badge > img {
+  height: 64px;
+  border: none;
+  object-fit: contain;
+}
+.warhammer.sidebar-info .system-badge i {
+  padding-inline-start: 2px;
+  font-size: var(--font-size-12);
+}
+.warhammer.sidebar-info .system-badge .system-info {
+  position: relative;
+}
+.warhammer.sidebar-info .system-badge .system-info .notification-pip {
+  top: 0px;
+  right: -15px;
+}
+.warhammer.sidebar-info button {
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+blockquote.foundry-note {
+  border-left: none;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 5px;
+  background: linear-gradient(rgba(255, 143, 32, 0.76) 0%, rgba(255, 77, 30, 0.75) 100%);
+  box-shadow: 0 0 7px black;
+  font-style: normal;
+  color: black;
+}
+blockquote.foundry-note a.content-link {
+  color: #1c3132;
+}
+blockquote.foundry-note a {
+  color: darkslategrey;
+}
+blockquote.foundry-note::before {
+  content: url("../../assets/icons/vtt.png");
+  float: left;
+  margin-right: 5px;
+}

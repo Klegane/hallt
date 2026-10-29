@@ -1,0 +1,156 @@
+{
+  "effective_font_measurement_available": false,
+  "selection_method": "Static CSS and system classic-theme default; actual per-user configuration not read",
+  "selected_files": [
+    {
+      "path_original": "fonts/signika/signika-regular.woff2",
+      "copied_path": "fonts/fonts/signika/signika-regular.woff2",
+      "sha256": "210e81745c75214bc84a307cc76c150f5545f91549282c724a6bf4b965c027b6",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    },
+    {
+      "path_original": "fonts/signika/signika-bold.woff2",
+      "copied_path": "fonts/fonts/signika/signika-bold.woff2",
+      "sha256": "f57457e65ac911e442a11afaca1f13b672ca42062bbdedd9b4723338f48e3c91",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    },
+    {
+      "path_original": "fonts/fontawesome/webfonts/fa-solid-900.woff2",
+      "copied_path": "fonts/fonts/fontawesome/webfonts/fa-solid-900.woff2",
+      "sha256": "6c5ae9ea51f33e6a29a52689adec7a0891a75bdba0482ea384f9bdec0be4953a",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    },
+    {
+      "path_original": "systems/wfrp4e/fonts/CaslonAntique.ttf",
+      "copied_path": "fonts/systems/wfrp4e/fonts/CaslonAntique.ttf",
+      "sha256": "392bfffbe85297b27b5aa6394bcc76cea5a4402e1f176121b10d3d6b6dbe2338",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    },
+    {
+      "path_original": "systems/wfrp4e/fonts/CaslonAntique-Bold.ttf",
+      "copied_path": "fonts/systems/wfrp4e/fonts/CaslonAntique-Bold.ttf",
+      "sha256": "88844ed855d4bcc30535e6413a1ad62343bb4cd33aae79d384ef1dacb7dd6623",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    },
+    {
+      "path_original": "systems/wfrp4e/fonts/ACaslonPro-Regular.otf",
+      "copied_path": "fonts/systems/wfrp4e/fonts/ACaslonPro-Regular.otf",
+      "sha256": "c6dad639327411a32f6049f5b47872b7091e12aead4105f2c94999cecead885e",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    },
+    {
+      "path_original": "systems/wfrp4e/fonts/ACaslonPro-Bold.otf",
+      "copied_path": "fonts/systems/wfrp4e/fonts/ACaslonPro-Bold.otf",
+      "sha256": "a51617fed8e4d6bf49f58d0bcbd76b92458bd3bfcdc704d5498e8aebccaf3e9f",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    },
+    {
+      "path_original": "systems/wfrp4e/fonts/only-skulls.ttf",
+      "copied_path": "fonts/systems/wfrp4e/fonts/only-skulls.ttf",
+      "sha256": "aac204d81cbb8433e379bfaa69aa75f6460cec21cbd880826b0e0e2e9353c84a",
+      "selection_basis": "CSS dependency for classic WFRP journal content or explicit offline reader controls; not observed in live Foundry",
+      "effective_font_observed": false
+    }
+  ],
+  "inactive_font_faces_omitted_from_active_css": [
+    {
+      "source_css": "css/foundry2.css",
+      "family": "Modesto Condensed",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "css/foundry2.css",
+      "family": "Modesto Condensed",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "css/foundry2.css",
+      "family": "Amiri",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "css/foundry2.css",
+      "family": "Amiri",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "css/foundry2.css",
+      "family": "Bruno Ace",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "css/foundry2.css",
+      "family": "Bruno Ace SC",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 7 Brands",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 7 Duotone",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 7 Pro",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 7 Pro",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 7 Pro",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 5 Brands",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 5 Pro",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 5 Pro",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "Font Awesome 5 Duotone",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "FontAwesome",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "FontAwesome",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    },
+    {
+      "source_css": "fonts/fontawesome/css/all.min.css",
+      "family": "FontAwesome",
+      "reason": "Not selected by classic journal content or reader controls; live font use not observed."
+    }
+  ],
+  "no_font_substitution_requested_or_performed": true,
+  "css_native_italic_synthesis": "The original system declares regular and bold Caslon faces only; italic synthesis follows original CSS, not replacement files."
+}
