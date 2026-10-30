@@ -1,0 +1,32 @@
+/* Scope additions to the GM guide; retain the Journal's original typography. */
+.reading-export .gm-guide { margin-top: 36px; }
+.gm-guide .guide-intro { border-left: 4px solid #6b2020; padding: 12px 16px; background: #c7ae7420; }
+.gm-guide .guide-index { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 24px; }
+.gm-guide .guide-index a {
+  display: flex; align-items: center; min-height: 44px; padding: 8px 14px;
+  box-sizing: border-box; border: 1px solid #9a8874; border-radius: 4px;
+  color: #4a0404; background: #f2ede2; text-decoration: none;
+}
+.gm-guide .guide-index a:hover { background: #e1d6c3; }
+.gm-guide a:focus-visible, .gm-guide .guide-table-wrap:focus-visible { outline: 2px solid #6b2020; outline-offset: 3px; }
+.gm-guide .guide-table-wrap { width: 100%; max-width: 100%; overflow-x: auto; margin: 14px 0; }
+.reading-export .gm-guide table { width: 100%; margin: 0; border-collapse: collapse; table-layout: fixed; }
+.reading-export .gm-guide table th, .reading-export .gm-guide table td { padding: 10px 12px; vertical-align: top; overflow-wrap: anywhere; text-align: left; }
+.gm-guide th { background: #6b202018; }
+.gm-guide .scene-checks th:first-child { width: 10%; }
+.gm-guide .scene-checks th:nth-child(2) { width: 48%; }
+.gm-guide .guide-source { color: #594b3b; font-size: .9em; }
+.gm-guide h3, .gm-guide h4, .gm-guide .npc-reference { scroll-margin-top: 24px; }
+.gm-guide .npc-reference { margin: 20px 0; padding: 16px 18px; border: 1px solid #9a8874; border-radius: 5px; background: #f2ede21a; }
+.gm-guide .npc-reference h4 { margin-top: 0; }
+@media (max-width: 600px) {
+  .reading-export .gm-guide table { display: table; font-size: .95em; }
+  .reading-export .gm-guide table th, .reading-export .gm-guide table td { padding: 8px 6px; }
+  .gm-guide .npc-reference { padding: 12px; }
+  .gm-guide .guide-index a { flex: 1 1 140px; }
+}
+@media print {
+  .gm-guide .guide-index { display: none; }
+  .gm-guide .guide-table-wrap { overflow: visible; }
+  .gm-guide tr { break-inside: avoid; }
+}
