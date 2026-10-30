@@ -8,6 +8,8 @@ Dispone de enlaces internos a perfiles y reglas, fuentes locales Caslon y un bus
 
 ## Abrir la página
 
+Las **tarjetas de personaje en PDF** están disponibles desde el menú lateral y al comienzo de la guía de dirección, con opciones para abrirlas o descargarlas. El archivo se sirve desde `assets/documents/tarjetas-personaje-hallt.pdf`.
+
 Abre `index.html` directamente en el navegador. La página y sus recursos funcionan sin conexión, sin cuentas ni instalación.
 
 También puedes servir la carpeta con Python:

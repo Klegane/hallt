@@ -23,6 +23,8 @@ def render():
         page = page[:position] + '\n' + block + '\n' + page[position:]
     if '<a href="#guia-direccion">' not in page.split('</nav>', 1)[0]:
         page = page.replace('<form class="journal-search"', '<a href="#guia-direccion">Guía de dirección: reglas y PNJ</a><form class="journal-search"', 1)
+    if '<a href="#tarjetas-personaje">' not in page.split('</nav>', 1)[0]:
+        page = page.replace('<form class="journal-search"', '<a href="#tarjetas-personaje">Tarjetas de personaje (PDF)</a><form class="journal-search"', 1)
     if 'href="styles/guide.css"' not in page:
         page = page.replace('</head>', '<link rel="stylesheet" href="styles/guide.css"></head>', 1)
     path.write_text(page, encoding='utf-8', newline='\n')
